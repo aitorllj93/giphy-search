@@ -5,7 +5,7 @@
       "projectType": "application",
       "root": "apps/giphy-search",
       "sourceRoot": "apps/giphy-search/src",
-      "prefix": "giphy-search",
+      "prefix": "gs",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
