@@ -1,0 +1,40 @@
+/** From GIPHY Brand Guidelines (https://www.dropbox.com/s/jf1jx8tlkw5wepx/_GIPHY%20Partner%20Style%20Guide%20V6.pdf?dl=0) */
+
+$giphy-blue: #3191ff;
+$giphy-indigo: #6157ff;
+$giphy-purple: #9933ff;
+$giphy-pink: #e64686;
+$giphy-red: #ff6666;
+$giphy-yellow: #fff35c;
+$giphy-green: #00ff99;
+$giphy-teal: #00e6cc;
+$giphy-cyan: #00ccff;
+
+/** Some maps just in case we need them later */
+
+$giphy-colors: (
+  'blue': $giphy-blue,
+  'indigo': $giphy-indigo,
+  'purple': $giphy-purple,
+  'pink': $giphy-pink,
+  'red': $giphy-red,
+  'yellow': $giphy-yellow,
+  'green': $giphy-green,
+  'teal': $giphy-teal,
+  'cyan': $giphy-cyan,
+);
+
+$giphy-core-colors: (
+  'red': $giphy-red,
+  'purple': $giphy-purple,
+  'green': $giphy-green,
+  'yellow': $giphy-yellow,
+  'cyan': $giphy-cyan,
+);
+
+$giphy-secondary-colors: (
+  'pink': $giphy-pink,
+  'indigo': $giphy-indigo,
+  'teal': $giphy-teal,
+  'blue': $giphy-blue,
+);

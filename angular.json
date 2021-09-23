@@ -17,11 +17,8 @@
             "polyfills": "apps/giphy-search/src/polyfills.ts",
             "tsConfig": "apps/giphy-search/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "apps/giphy-search/src/favicon.ico",
-              "apps/giphy-search/src/assets"
-            ],
-            "styles": ["apps/giphy-search/src/styles.scss"],
+            "assets": ["apps/giphy-search/src/favicon.ico", "apps/giphy-search/src/assets"],
+            "styles": ["apps/giphy-search/src/styles/app.scss"],
             "scripts": []
           },
           "configurations": {
@@ -78,10 +75,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/giphy-search/src/**/*.ts",
-              "apps/giphy-search/src/**/*.html"
-            ]
+            "lintFilePatterns": ["apps/giphy-search/src/**/*.ts", "apps/giphy-search/src/**/*.html"]
           }
         },
         "test": {

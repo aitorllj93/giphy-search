@@ -1,0 +1,16 @@
+@use '../abstracts/variables/colors' as colors;
+
+// TODO: A nicer way would be using `@forward` instead of `@use` but prettier fails with it for some reason
+@use '~bootstrap/scss/bootstrap' with
+  (
+    $blue: colors.$giphy-blue,
+    $indigo: colors.$giphy-indigo,
+    $purple: colors.$giphy-purple,
+    $pink: colors.$giphy-pink,
+    $red: colors.$giphy-red,
+    $yellow: colors.$giphy-yellow,
+    $green: colors.$giphy-green,
+    $teal: colors.$giphy-teal,
+    $cyan: colors.$giphy-cyan,
+    $primary: colors.$giphy-purple
+  );
