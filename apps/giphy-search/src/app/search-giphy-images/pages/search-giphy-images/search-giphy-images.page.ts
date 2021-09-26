@@ -26,4 +26,12 @@ export class SearchGiphyImagesPage {
   onSearchSubmit({ tags }: { tags: string[] }) {
     this.store.dispatch(new SearchGiphyImages.SearchSubmitted(tags));
   }
+
+  onPaginationNextButtonClick() {
+    this.store.dispatch(new SearchGiphyImages.PaginationNextButtonClicked());
+  }
+
+  onPaginationPreviousButtonClick() {
+    this.store.dispatch(new SearchGiphyImages.PaginationPreviousButtonClicked());
+  }
 }

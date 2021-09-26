@@ -33,7 +33,23 @@
   </div>
 
   <div class="m-3" *ngIf="data.state === states.SearchSucceeded">
-    <gs-giphy-images-grid *ngIf="data.result" [result]="data.result"></gs-giphy-images-grid>
+    <gs-giphy-images-grid-pagination
+      [result]="data.result"
+      [params]="data.params"
+      (nextButtonClick)="onPaginationNextButtonClick()"
+      (previousButtonClick)="onPaginationPreviousButtonClick()"
+    >
+    </gs-giphy-images-grid-pagination>
+
+    <gs-giphy-images-grid *ngIf="data.result" [result]="data.result"> </gs-giphy-images-grid>
+
+    <gs-giphy-images-grid-pagination
+      [result]="data.result"
+      [params]="data.params"
+      (nextButtonClick)="onPaginationNextButtonClick()"
+      (previousButtonClick)="onPaginationPreviousButtonClick()"
+    >
+    </gs-giphy-images-grid-pagination>
   </div>
 
   <div class="m-3" *ngIf="data.state === states.SearchFailed">

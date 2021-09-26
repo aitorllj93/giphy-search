@@ -16,4 +16,12 @@ export namespace SearchGiphyImages {
     static readonly type = '[SearchGiphyImages] Search Failed';
     constructor(public payload: Error) {}
   }
+
+  export class PaginationNextButtonClicked {
+    static readonly type = '[SearchGiphyImages] Pagination Next Button Clicked';
+  }
+
+  export class PaginationPreviousButtonClicked {
+    static readonly type = '[SearchGiphyImages] Pagination Previous Button Clicked';
+  }
 }

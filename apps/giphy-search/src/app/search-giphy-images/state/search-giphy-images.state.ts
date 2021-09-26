@@ -91,4 +91,54 @@ export class SearchGiphyImagesState {
       }),
     );
   }
+
+  @Action(SearchGiphyImages.PaginationNextButtonClicked)
+  paginationNextButtonClicked({ setState, getState, dispatch }: StateContext<SearchGiphyImagesStateModel>) {
+    const { tags, limit, offset } = getState().searchParams;
+    const newOffset = offset + limit;
+
+    setState(
+      patch<SearchGiphyImagesStateModel>({
+        state: SearchGiphyImagesStateModelState.Searching,
+        searchParams: patch<SearchGiphyImagesStateModel['searchParams']>({
+          offset: newOffset,
+        }),
+        searchResult: {
+          gifs: [],
+          error: undefined,
+          totalCount: 0,
+        },
+      }),
+    );
+
+    return this.searchGiphyImagesService.searchGiphyImagesByTags(tags, { limit, offset: newOffset }).pipe(
+      switchMap((result) => dispatch(new SearchGiphyImages.SearchSucceeded(result))),
+      catchError((error) => dispatch(new SearchGiphyImages.SearchFailed(error))),
+    );
+  }
+
+  @Action(SearchGiphyImages.PaginationPreviousButtonClicked)
+  paginationPreviousButtonClicked({ setState, getState, dispatch }: StateContext<SearchGiphyImagesStateModel>) {
+    const { tags, limit, offset } = getState().searchParams;
+    const newOffset = offset - limit;
+
+    setState(
+      patch<SearchGiphyImagesStateModel>({
+        state: SearchGiphyImagesStateModelState.Searching,
+        searchParams: patch<SearchGiphyImagesStateModel['searchParams']>({
+          offset: newOffset < 0 ? 0 : newOffset,
+        }),
+        searchResult: {
+          gifs: [],
+          error: undefined,
+          totalCount: 0,
+        },
+      }),
+    );
+
+    return this.searchGiphyImagesService.searchGiphyImagesByTags(tags, { limit, offset: newOffset }).pipe(
+      switchMap((result) => dispatch(new SearchGiphyImages.SearchSucceeded(result))),
+      catchError((error) => dispatch(new SearchGiphyImages.SearchFailed(error))),
+    );
+  }
 }
