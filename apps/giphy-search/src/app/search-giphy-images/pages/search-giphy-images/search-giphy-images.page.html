@@ -1,1 +1,10 @@
-<p>search-giphy-images works!</p>
+<div class="row">
+  <div class="col-4" *ngFor="let gif of gifs$ | async">
+    <div class="card bg-primary text-light mb-3">
+      <img src="{{gif.images.original.url}}" alt="{{gif.title}}" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">{{gif.title}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
