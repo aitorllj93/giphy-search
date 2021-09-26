@@ -1,10 +1,45 @@
-<div class="row">
-  <div class="col-4" *ngFor="let gif of gifs$ | async">
-    <div class="card bg-primary text-light mb-3">
-      <img src="{{gif.images.original.url}}" alt="{{gif.title}}" class="card-img-top" />
-      <div class="card-body">
-        <h5 class="card-title">{{gif.title}}</h5>
-      </div>
+<ng-container
+  *ngIf="{
+  state: state$ | async,
+  params: params$ | async,
+  result: result$ | async
+} as data"
+>
+  <gs-giphy-images-searchbar
+    *ngIf="data.params"
+    [tags]="data.params?.tags"
+    (submitButtonClick)="onSearchSubmit($event)"
+  ></gs-giphy-images-searchbar>
+
+  <div class="m-3" *ngIf="data.state === states.Idle">
+    <div class="alert alert-info" role="alert">Insert tags and click on search to start</div>
+  </div>
+
+  <div class="m-3" *ngIf="data.state === states.Searching">
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+        role="progressbar"
+        aria-valuenow="100"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 100%"
+      ></div>
+    </div>
+    <div class="alert alert-info mt-2" role="alert" *ngIf="data.params?.tags">
+      Searching for:
+      <ng-container *ngFor="let tag of data.params?.tags; let last = last"> {{ tag }}{{ last ? '' : ',' }} </ng-container>
     </div>
   </div>
-</div>
+
+  <div class="m-3" *ngIf="data.state === states.SearchSucceeded">
+    <gs-giphy-images-grid *ngIf="data.result" [result]="data.result"></gs-giphy-images-grid>
+  </div>
+
+  <div class="m-3" *ngIf="data.state === states.SearchFailed">
+    <div class="alert alert-danger" role="alert">
+      Search failed, please try again
+      <ng-container *ngIf="data.result && data.result?.error"> Reason: {{ data.result?.error }} </ng-container>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,27 @@
+@use '~node_modules/ngx-chips/core/styles/core/core' as tagInputCore;
+@use '../abstracts/variables/colors' as colors;
+
+@each $name, $color in colors.$giphy-colors {
+  $tag-input-giphy-theme: (
+    container-border-bottom: 1px solid $color,
+    container-border-bottom-focused: 1px solid $color,
+  );
+
+  $tag-input-giphy-tag-theme: (
+    background: $color,
+    background-focused: $color,
+    background-active: $color,
+    background-hover: $color,
+    color: #fff,
+    color-hover: #fff,
+    border-radius: 2px,
+  );
+
+  tag-input .ng2-tag-input.giphy-#{$name} {
+    @include tagInputCore.tag-input-theme($tag-input-giphy-theme);
+
+    tag {
+      @include tagInputCore.tag-theme($tag-input-giphy-tag-theme);
+    }
+  }
+}
