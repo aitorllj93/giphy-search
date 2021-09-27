@@ -11,6 +11,7 @@
     "lint": "nx lint",
     "lint-staged": "lint-staged",
     "test": "nx test",
+    "e2e": "nx e2e",
     "prepare": "husky install"
   },
   "private": true,

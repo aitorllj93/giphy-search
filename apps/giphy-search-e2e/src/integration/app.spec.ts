@@ -1,13 +1,28 @@
-import { getGreeting } from '../support/app.po';
-
 describe('giphy-search', () => {
-  beforeEach(() => cy.visit('/'));
+  describe('Given a browser with the app opened', () => {
+    beforeEach(() => cy.visit('/'));
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
+    it('Then it should display header', () => {
+      cy.get('.navbar').contains('Search Images');
+    });
 
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to giphy-search!');
+    it('Then it should display search form', () => {
+      cy.get('form').contains('Search');
+    });
+
+    it('Then it should display info message', () => {
+      cy.get('.alert-info').contains('Insert tags and click on search to start');
+    });
+
+    describe('When user inserts some tags on tag input and presses the submit button', () => {
+      beforeEach(() => {
+        cy.get('.ng2-tag-input').click().type('cats{enter}');
+        cy.get('button').click();
+      });
+
+      it('Then it should display results', () => {
+        cy.get('.card').should('have.length', 9);
+      });
+    });
   });
 });
