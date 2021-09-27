@@ -14,6 +14,7 @@
             "customWebpackConfig": {
               "path": "apps/giphy-search/webpack.config.js"
             },
+            "allowedCommonJsDependencies": ["@giphy/js-fetch-api"],
             "outputPath": "dist/apps/giphy-search",
             "index": "apps/giphy-search/src/index.html",
             "main": "apps/giphy-search/src/main.ts",
