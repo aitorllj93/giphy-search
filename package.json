@@ -12,7 +12,8 @@
     "lint-staged": "lint-staged",
     "test": "nx test",
     "e2e": "nx e2e",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "documentation": "compodoc -p apps/giphy-search/tsconfig.json"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "@angular/cli": "~12.2.0",
     "@angular/compiler-cli": "^12.2.0",
     "@angular/language-service": "^12.2.0",
+    "@compodoc/compodoc": "^1.1.15",
     "@ngneat/spectator": "^8.0.4",
     "@nrwl/cli": "12.9.0",
     "@nrwl/cypress": "12.9.0",

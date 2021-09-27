@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linting
+        run: npm run lint
+
+      - name: Run unit tests
+        run: npm test -- --codeCoverage --coverageDirectory dist/gh-pages/coverage
+
+      - name: Run e2e tests
+        run: npm run e2e -- --headless
+        env:
+          GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
+
+      - name: Build angular app
+        run: npm run build -- --baseHref "./" --output-path dist/gh-pages/demo
+        env:
+          GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
+
+      - name: Build documentation
+        run: npm run documentation -- -d dist/gh-pages/docs
+
+      - name: Publish to GH Pages Branch
+        uses: s0/git-publish-subdir-action@master
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: dist/gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
