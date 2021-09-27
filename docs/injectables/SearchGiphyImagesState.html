@@ -1,0 +1,1030 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>giphy-search documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">giphy-search documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >SearchGiphyImagesState</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#paginationNextButtonClicked" >paginationNextButtonClicked</a>
+                            </li>
+                            <li>
+                                <a href="#paginationPreviousButtonClicked" >paginationPreviousButtonClicked</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#params" >params</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#result" >result</a>
+                            </li>
+                            <li>
+                                <a href="#searchFailed" >searchFailed</a>
+                            </li>
+                            <li>
+                                <a href="#searchSubmited" >searchSubmited</a>
+                            </li>
+                            <li>
+                                <a href="#searchSucceeded" >searchSucceeded</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#state" >state</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(searchGiphyImagesService: <a href="../injectables/SearchGiphyImagesService.html" target="_self">SearchGiphyImagesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>searchGiphyImagesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SearchGiphyImagesService.html" target="_self" >SearchGiphyImagesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginationNextButtonClicked"></a>
+                    <span class="name">
+                        <span ><b>paginationNextButtonClicked</b></span>
+                        <a href="#paginationNextButtonClicked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paginationNextButtonClicked(undefined: <a href="../injectables/SearchGiphyImagesState.html" target="_self">StateContext&lt;SearchGiphyImagesStateModel&gt;</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Action(SearchGiphyImages.PaginationNextButtonClicked)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >StateContext&lt;SearchGiphyImagesStateModel&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginationPreviousButtonClicked"></a>
+                    <span class="name">
+                        <span ><b>paginationPreviousButtonClicked</b></span>
+                        <a href="#paginationPreviousButtonClicked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paginationPreviousButtonClicked(undefined: <a href="../injectables/SearchGiphyImagesState.html" target="_self">StateContext&lt;SearchGiphyImagesStateModel&gt;</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Action(SearchGiphyImages.PaginationPreviousButtonClicked)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >StateContext&lt;SearchGiphyImagesStateModel&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="params"></a>
+                    <span class="name">
+                        <span class="modifier">Static</span>
+                        <span ><b>params</b></span>
+                        <a href="#params"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>params(searchGiphyImagesState: <a href="../injectables/SearchGiphyImagesState.html" target="_self">SearchGiphyImagesStateModel</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Selector([&#x27;SearchGiphyImagesState&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchGiphyImagesState</td>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >SearchGiphyImagesStateModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="result"></a>
+                    <span class="name">
+                        <span class="modifier">Static</span>
+                        <span ><b>result</b></span>
+                        <a href="#result"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>result(searchGiphyImagesState: <a href="../injectables/SearchGiphyImagesState.html" target="_self">SearchGiphyImagesStateModel</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Selector([&#x27;SearchGiphyImagesState&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchGiphyImagesState</td>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >SearchGiphyImagesStateModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchFailed"></a>
+                    <span class="name">
+                        <span ><b>searchFailed</b></span>
+                        <a href="#searchFailed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchFailed(undefined: <a href="../injectables/SearchGiphyImagesState.html" target="_self">StateContext&lt;SearchGiphyImagesStateModel&gt;</a>, undefined: <a href="../classes/SearchFailed.html" target="_self">SearchGiphyImages.SearchFailed</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Action(SearchGiphyImages.SearchFailed)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >StateContext&lt;SearchGiphyImagesStateModel&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                                <code><a href="../classes/SearchFailed.html" target="_self" >SearchGiphyImages.SearchFailed</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchSubmited"></a>
+                    <span class="name">
+                        <span ><b>searchSubmited</b></span>
+                        <a href="#searchSubmited"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchSubmited(undefined: <a href="../injectables/SearchGiphyImagesState.html" target="_self">StateContext&lt;SearchGiphyImagesStateModel&gt;</a>, undefined: <a href="../classes/SearchSubmitted.html" target="_self">SearchGiphyImages.SearchSubmitted</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Action(SearchGiphyImages.SearchSubmitted)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >StateContext&lt;SearchGiphyImagesStateModel&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                                <code><a href="../classes/SearchSubmitted.html" target="_self" >SearchGiphyImages.SearchSubmitted</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchSucceeded"></a>
+                    <span class="name">
+                        <span ><b>searchSucceeded</b></span>
+                        <a href="#searchSucceeded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchSucceeded(undefined: <a href="../injectables/SearchGiphyImagesState.html" target="_self">StateContext&lt;SearchGiphyImagesStateModel&gt;</a>, undefined: <a href="../classes/SearchSucceeded.html" target="_self">SearchGiphyImages.SearchSucceeded</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Action(SearchGiphyImages.SearchSucceeded)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >StateContext&lt;SearchGiphyImagesStateModel&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                                <code><a href="../classes/SearchSucceeded.html" target="_self" >SearchGiphyImages.SearchSucceeded</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="state"></a>
+                    <span class="name">
+                        <span class="modifier">Static</span>
+                        <span ><b>state</b></span>
+                        <a href="#state"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>state(searchGiphyImagesState: <a href="../injectables/SearchGiphyImagesState.html" target="_self">SearchGiphyImagesStateModel</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Selector([&#x27;SearchGiphyImagesState&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">apps/giphy-search/src/app/search-giphy-images/state/search-giphy-images.state.ts:17</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchGiphyImagesState</td>
+                                    <td>
+                                                <code><a href="../injectables/SearchGiphyImagesState.html" target="_self" >SearchGiphyImagesStateModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Action, Selector, State, StateContext } from &#x27;@ngxs/store&#x27;;
+import { patch } from &#x27;@ngxs/store/operators&#x27;;
+import { catchError, switchMap } from &#x27;rxjs/operators&#x27;;
+import { SearchGiphyImagesService } from &#x27;../services/search-giphy-images.service&#x27;;
+import { SearchGiphyImages } from &#x27;./search-giphy-images.actions&#x27;;
+import { searchGiphyImagesInitialState } from &#x27;./search-giphy-images.initial-state&#x27;;
+import { SearchGiphyImagesStateModel, SearchGiphyImagesStateModelState } from &#x27;./search-giphy-images.state-model&#x27;;
+
+@State&lt;SearchGiphyImagesStateModel&gt;({
+  name: &#x27;searchGiphyImages&#x27;,
+  defaults: JSON.parse(JSON.stringify(searchGiphyImagesInitialState)),
+})
+@Injectable()
+export class SearchGiphyImagesState {
+  @Selector([SearchGiphyImagesState])
+  static state(searchGiphyImagesState: SearchGiphyImagesStateModel) {
+    return searchGiphyImagesState.state;
+  }
+
+  @Selector([SearchGiphyImagesState])
+  static params(searchGiphyImagesState: SearchGiphyImagesStateModel) {
+    return searchGiphyImagesState.searchParams;
+  }
+
+  @Selector([SearchGiphyImagesState])
+  static result(searchGiphyImagesState: SearchGiphyImagesStateModel) {
+    return searchGiphyImagesState.searchResult;
+  }
+
+  constructor(private searchGiphyImagesService: SearchGiphyImagesService) {}
+
+  @Action(SearchGiphyImages.SearchSubmitted)
+  searchSubmited(
+    { setState, getState, dispatch }: StateContext&lt;SearchGiphyImagesStateModel&gt;,
+    { payload }: SearchGiphyImages.SearchSubmitted,
+  ) {
+    setState(
+      patch&lt;SearchGiphyImagesStateModel&gt;({
+        state: SearchGiphyImagesStateModelState.Searching,
+        searchParams: patch&lt;SearchGiphyImagesStateModel[&#x27;searchParams&#x27;]&gt;({
+          tags: payload,
+          offset: 0,
+        }),
+        searchResult: {
+          gifs: [],
+          error: undefined,
+          totalCount: 0,
+        },
+      }),
+    );
+
+    const { tags, limit, offset } &#x3D; getState().searchParams;
+
+    return this.searchGiphyImagesService.searchGiphyImagesByTags(tags, { limit, offset }).pipe(
+      switchMap((result) &#x3D;&gt; dispatch(new SearchGiphyImages.SearchSucceeded(result))),
+      catchError((error) &#x3D;&gt; dispatch(new SearchGiphyImages.SearchFailed(error))),
+    );
+  }
+
+  @Action(SearchGiphyImages.SearchSucceeded)
+  searchSucceeded({ setState }: StateContext&lt;SearchGiphyImagesStateModel&gt;, { payload }: SearchGiphyImages.SearchSucceeded) {
+    setState(
+      patch&lt;SearchGiphyImagesStateModel&gt;({
+        state: SearchGiphyImagesStateModelState.SearchSucceeded,
+        searchParams: patch&lt;SearchGiphyImagesStateModel[&#x27;searchParams&#x27;]&gt;({
+          offset: payload.pagination.offset,
+        }),
+        searchResult: {
+          gifs: payload.data,
+          error: undefined,
+          totalCount: payload.pagination.total_count,
+        },
+      }),
+    );
+  }
+
+  @Action(SearchGiphyImages.SearchFailed)
+  searchFailed({ setState }: StateContext&lt;SearchGiphyImagesStateModel&gt;, { payload }: SearchGiphyImages.SearchFailed) {
+    setState(
+      patch&lt;SearchGiphyImagesStateModel&gt;({
+        state: SearchGiphyImagesStateModelState.SearchFailed,
+        searchParams: patch&lt;SearchGiphyImagesStateModel[&#x27;searchParams&#x27;]&gt;({
+          offset: 0,
+        }),
+        searchResult: {
+          gifs: [],
+          error: payload,
+          totalCount: 0,
+        },
+      }),
+    );
+  }
+
+  @Action(SearchGiphyImages.PaginationNextButtonClicked)
+  paginationNextButtonClicked({ setState, getState, dispatch }: StateContext&lt;SearchGiphyImagesStateModel&gt;) {
+    const { tags, limit, offset } &#x3D; getState().searchParams;
+    const newOffset &#x3D; offset + limit;
+
+    setState(
+      patch&lt;SearchGiphyImagesStateModel&gt;({
+        state: SearchGiphyImagesStateModelState.Searching,
+        searchParams: patch&lt;SearchGiphyImagesStateModel[&#x27;searchParams&#x27;]&gt;({
+          offset: newOffset,
+        }),
+        searchResult: {
+          gifs: [],
+          error: undefined,
+          totalCount: 0,
+        },
+      }),
+    );
+
+    return this.searchGiphyImagesService.searchGiphyImagesByTags(tags, { limit, offset: newOffset }).pipe(
+      switchMap((result) &#x3D;&gt; dispatch(new SearchGiphyImages.SearchSucceeded(result))),
+      catchError((error) &#x3D;&gt; dispatch(new SearchGiphyImages.SearchFailed(error))),
+    );
+  }
+
+  @Action(SearchGiphyImages.PaginationPreviousButtonClicked)
+  paginationPreviousButtonClicked({ setState, getState, dispatch }: StateContext&lt;SearchGiphyImagesStateModel&gt;) {
+    const { tags, limit, offset } &#x3D; getState().searchParams;
+    const newOffset &#x3D; offset - limit;
+
+    setState(
+      patch&lt;SearchGiphyImagesStateModel&gt;({
+        state: SearchGiphyImagesStateModelState.Searching,
+        searchParams: patch&lt;SearchGiphyImagesStateModel[&#x27;searchParams&#x27;]&gt;({
+          offset: newOffset &lt; 0 ? 0 : newOffset,
+        }),
+        searchResult: {
+          gifs: [],
+          error: undefined,
+          totalCount: 0,
+        },
+      }),
+    );
+
+    return this.searchGiphyImagesService.searchGiphyImagesByTags(tags, { limit, offset: newOffset }).pipe(
+      switchMap((result) &#x3D;&gt; dispatch(new SearchGiphyImages.SearchSucceeded(result))),
+      catchError((error) &#x3D;&gt; dispatch(new SearchGiphyImages.SearchFailed(error))),
+    );
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'SearchGiphyImagesState.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

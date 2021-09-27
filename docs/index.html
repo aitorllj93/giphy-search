@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>giphy-search documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	   <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">giphy-search documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="giphy-search">Giphy Search</h1>
+<p>A GIPHY search client webapp</p>
+<p>A running version of the application can be found <a href="https://aitorllamas.com/giphy-search/demo">here</a>. There&#39;s also <a href="https://aitorllamas.com/giphy-search/docs">code documentation</a> made with <a href="https://compodoc.app/">Compodoc</a>.</p>
+<h2 id="about-this-project">About this project</h2>
+<p>This project was created with the latest Angular version, and uses the <a href="https://developers.giphy.com/docs/">Giphy API</a>.</p>
+<p>The application is built with <a href="https://nrwl.io/">Nx</a> and uses <a href="https://cli.angular.io/">Angular CLI</a>, <a href="https://jestjs.io/">Jest</a> and <a href="https://www.cypress.io/">Cypress</a> under the hood.</p>
+<p>It&#39;s configured with pre-commit hooks (<a href="https://typicode.github.io/husky/#/">Husky</a>) to automatically run code formatting (<a href="https://prettier.io/">Prettier</a>) and linting (<a href="https://eslint.org/">ESLint</a>) so you don&#39;t need to worry about it.</p>
+<p>The User Interface is built with <a href="https://getbootstrap.com/">Bootstrap</a> customized based on the <a href="https://support.giphy.com/hc/en-us/articles/360022283772-GIPHY-Brand-Guidelines">GIPHY Brand Guidelines</a>. The application is responsive and works on mobile, tablet and desktop. The Tag Input is built with <a href="https://www.npmjs.com/package/ngx-chips">ngx-chips</a> component.</p>
+<p>The application state is stored with the <a href="https://www.ngxs.io/">NGXS</a> library.</p>
+<p>Unit tests use <a href="https://ng-mocks.sudo.eu/">ng-mocks</a> and <a href="https://ngneat.github.io/spectator/">Spectator</a>.</p>
+<h2 id="development">Development</h2>
+<p>Node.js and npm are required to install the application.</p>
+<h3 id="installation">Installation</h3>
+<div><pre class="line-numbers"><code class="language-sh">git clone git&#64;github.com:d3v0ps/giphy-search.git
+cd giphy-search
+npm install
+npm run prepare</code></pre></div><p>Update your environment variables with the following:</p>
+<div><pre class="line-numbers"><code class="language-sh">export GIPHY_API_KEY=&lt;your-api-key&gt;</code></pre></div><h3 id="run-development-server">Run Development Server</h3>
+<div><pre class="line-numbers"><code class="language-sh">npm start</code></pre></div><h3 id="run-unit-tests">Run Unit Tests</h3>
+<div><pre class="line-numbers"><code class="language-sh">npm test</code></pre></div><h3 id="run-e2e-tests">Run E2E Tests</h3>
+<div><pre class="line-numbers"><code class="language-sh">npm run e2e</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+
+       <script src="./js/menu-wc.js" defer></script>
+       <script nomodule src="./js/menu-wc_es5.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
