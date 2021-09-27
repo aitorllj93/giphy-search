@@ -28,7 +28,7 @@
     </div>
     <div class="alert alert-info mt-2" role="alert" *ngIf="data.params?.tags">
       Searching for:
-      <ng-container *ngFor="let tag of data.params?.tags; let last = last"> {{ tag }}{{ last ? '' : ',' }} </ng-container>
+      <ng-container *ngFor="let tag of data.params?.tags; let last = last">{{ tag }}{{ last ? '' : ',' }}</ng-container>
     </div>
   </div>
 
@@ -55,7 +55,7 @@
   <div class="m-3" *ngIf="data.state === states.SearchFailed">
     <div class="alert alert-danger" role="alert">
       Search failed, please try again
-      <ng-container *ngIf="data.result && data.result?.error"> Reason: {{ data.result?.error }} </ng-container>
+      <ng-container *ngIf="data.result && data.result?.error">Reason: {{ data.result?.error }}</ng-container>
     </div>
   </div>
 </ng-container>
